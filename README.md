@@ -15,3 +15,7 @@ Creators:
   <li>Helper Bot (Maded with JS)</li>
   <li>Backend Calcs</li>
 </ul>
+
+# Copyright
+
+<code>Not usable for commercial porpouses</code>
