@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./normalize.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Proyecto Fisica</title>
+    <link rel="shortcut icon" type="image/png" href="./ico.png"/>
+</head>
+<body>
+    <header class="headerF">
+        <button id="closeReq1">x</button>
+        <img src="./img/atom.png">
+        <h1>Tanque de Fisica</h1>
+        <img src="./img/atom.png">
+        <button id="helpBotYesHeader" class="helpBotBtnH">
+            <figure><img src="./img/atom.png"></figure>
+        </button>
+    </header>
+    <div id="cancelAction"></div>
+    <div class="shadowW" id="shadowned"><button class=".cancel-button" id="backTuto"><b><</b> CANCELAR</button></div>
+    <div id="assitant">
+        <figure><img src="./img/atom.png"></figure>
+        <article id="tip">
+            <p id="tipText">¿Necesitas ayuda con el programa?</p>
+            <figure id="decBtnContainer"><a id="helpBotYes">si</a><a id="helpBotNo">no</a></figure>
+        </article>
+    </div>
+    <section id="chooseSec">
+        <div class="proyectContainer chooseContainer">
+            <div id="choose">
+                <div id="censoredAction"></div>
+                <h1>YO QUIERO...</h1>
+                <ul>
+                    <li><button id="req1EV">
+                        <p class="btnDescText">Saber mi volumen interno</p>
+                    </button></li>
+                    <li><button id="req2EV">
+                        <p class="btnDescText">Saber mis caracteristicas</p>
+                    </button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="req1">
+        <div class="proyectContainer req1container">
+            <div class="step-2I" id="step-2I"></div>
+            <div class="container_rq1">
+                <form class="requerimiento1" id="req1Form">
+                    <h1> ¡Provee las caracteristicas del tanque y recibe la capacidad! </h1>
+                    <ul id="form-ul-container">
+                        <li id="aea" class="o">
+                            <img id="o1" src="./img/medida.png">
+                            <p>medida</p>
+                            <select class="inputReq1" name="Medida" id="medida" required>
+                                <option value="m">metros (m)</option>
+                                <option value="cm">centimetros (cm)</option>
+                                <option value="mm">milimetros (mm)</option>
+                                <option value="in">pulgadas (in)</option>
+                                <option value="ft">pies (ft)</option>
+                            </select>
+                        </li>
+                        <li class="o">
+                            <p>Diametro</p>
+                            <img id="o3" src="./img/diametro.png">
+                            <input class="inputReq1" id="valorD" type="number" placeholder="Ingresa el diametro" required>
+                        </li>
+                        <li class="o">
+                            <img src="./img/altura.png">
+                            <p>Altura</p>
+                            <input class="inputReq1" id="valorH" type="number" placeholder="Ingresa la altura" required>
+                        </li>
+                        <li>
+                            <p>Espesor</p>
+                        </li>
+                        <li class="o">
+                            <p>Medida del espesor:</p>
+                            <select name="MedidaE" id="medidae" class="inputReq1" required>
+                            <option value="m">metros (m)</option>
+                            <option value="cm">centimetros (cm)</option>
+                            <option value="mm">milimetros (mm)</option>
+                            <option value="in">pulgadas (in)</option>
+                            <option value="ft">pies (ft)</option>
+                            </select>
+                            <img id="o4" src="./img/grosor.png">
+                        </li>
+                        <li class="o">
+                            <img id="o5" src="./img/valor.png">
+                            <p>Valor:</p>
+                            <input id="valorE" type="number" class="inputReq1" placeholder="Ingrese el valor" required>
+                        </li>
+                    </ul>
+                    <input class = "sendInf" id="req1Submit" type="submit" value="Descubre el dato!">
+                </form>
+            </div>
+            <div class="resultContainer" id="resultreq1">
+                <h2>CAPACIDAD DEL TANQUE REQUERIDO: </h2>
+                <label id="result_value"></label>
+            </div>
+        </div>
+    </section>
+    <section id = "req2">
+        <div class="proyectContainer req2container">
+            <div class="container_rq1">
+                <form class="requerimiento1" id="req2Form" >
+                    <h1> ¡Provee el volumen de tu tanque, dos datos y obten el tercero!</h1>
+                    <h2>Requerimiento para definir la altura del tanque.</h2>
+                    <ul id="form-ul2-container">
+                        <li class="o">
+                            <p>medida</p>
+                            <img id="o1" src="./img/medida.png">
+                            <select class="inputReq1" name="Medida" id="medidaReq2" required>
+                                <option value="m">metros (m)</option>
+                                <option value="cm">centimetros (cm)</option>
+                                <option value="mm">milimetros (mm)</option>
+                                <option value="in">pulgadas (in)</option>
+                                <option value="ft">pies (ft)</option>
+                            </select>
+                        </li>
+                        <li class="o">
+                            <p>Capacidad</p>
+                            <img id="o2" src="./img/meter.jpg">
+                            <input class="inputReq1" id="valorVreq2" type="number" placeholder="Ingresa el volumen" required>
+                        </li>
+                        <li class="o">
+                            <p>Diametro</p>
+                            <img id="o3" src="./img/diametro.png">
+                            <input class="inputReq1" id="valorDreq2" type="number" placeholder="Ingresa el diametro" required>
+                        </li>
+                        <li>
+                            <p>Espesor</p>
+                        </li>
+                        <li class="o">
+                            <p>Medida del espesor:</p>
+                            <img id="o4" src="./img/grosor.png">
+                            <select name="MedidaE" id="medidaeReq2" class="inputReq1" required>
+                                <option value="m">metros (m)</option>
+                                <option value="cm">centimetros (cm)</option>
+                                <option value="mm">milimetros (mm)</option>
+                                <option value="in">pulgadas (in)</option>
+                                <option value="ft">pies (ft)</option>
+                            </select>
+                        </li>
+                        <li class="o">
+                            <p>Valor:</p>
+                            <img id="o5" src="./img/valor.png">
+                            <input id="valorEreq2" type="number" class="inputReq1" placeholder="Ingrese el valor" required>
+                        </li>
+                    </ul>
+                    <input class = "sendInf" id="req2Submit" type="submit" value="Descubre el dato!"> 
+                </form>
+            </div>
+            <div class="resultContainer" id="resultreq1">
+                <h2>ALTURA REQUERIDA DEL TANQUE: </h2>
+                <label id="result_valueReq2"></label>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Software de Uso Libre, Proyecto Desarrollado Por:</h3>
+        <div class="proyectContainer footcont">
+            <div class="dev-c">
+                <h2>Angel Lindarte Lopez</h2>
+                <ul>
+                    <a href="https://github.com/AngeleLindarteL" target="_blank" class="icon"><img src="./img/github.png"></a>
+                    <a href="https://www.linkedin.com/in/angel-lindarte-9226921b5/" target="_blank" class="icon"><img src="./img/linkedin.png"></a>
+                    <a href="mailto:programmer.angellindarte@gmail.com? Subject= Interesado%20en%20tus%20servicios" 
+                    class="icon"><img src="./img/gmail.png"></a>
+                </ul>
+            </div>
+            <div class="dev-c">
+                <h2>Deiber David Verano Avila</h2>
+                <ul>
+                    <a href="https://github.com/DeiverV" target="_blank" class="icon"><img src="./img/github.png"></a>
+                    <a href="https://www.linkedin.com/in/deiber-verano-a5b629217/" target="_blank" class="icon"><img src="./img/linkedin.png"></a>
+                    <a href="mailto:deiberveranodev@gmail.com? Subject= Interesado%20en%20tus%20servicios" 
+                    class="icon"><img src="./img/gmail.png"></a>
+                </ul>
+            </div>
+            <div class="dev-c">
+                <h2>Omar Esteban Contreras Leal</h2>
+                <ul>
+                    <a href="https://github.com/OmarCL09"target="_blank" class="icon"><img src="./img/github.png"></a>
+                    <a href="https://www.linkedin.com/in/omar-esteban-contreras-leal-685766182/" target="_blank" class="icon"><img src="./img/linkedin.png"></a>
+                    <a href="mailto:estebonte2@gmail.com? Subject= Interesado%20en%20tus%20servicios" 
+                    class="icon"><img src="./img/gmail.png"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./fisica.js"></script>
+    <script src="./helpBot.js"></script>
+</body>
+</html>
